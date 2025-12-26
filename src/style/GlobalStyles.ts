@@ -6,8 +6,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-
-
   html, body, #root {
     height: 100%;
     min-height: 100%;
