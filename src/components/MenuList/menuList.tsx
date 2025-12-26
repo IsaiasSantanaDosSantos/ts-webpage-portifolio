@@ -1,0 +1,96 @@
+import { Link } from 'react-scroll';
+
+import * as S from './menuList.styled';
+
+const MenuList = () => {
+  return (
+    <S.UL>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          Home
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          About
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          Services
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="resume"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          Resume
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="portfolio"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          Portfolio
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="references"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          References
+        </Link>
+      </S.LI>
+      <S.LI>
+        <Link
+          activeClass="actived"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          Contact
+        </Link>
+      </S.LI>
+    </S.UL>
+  );
+};
+
+export default MenuList;
