@@ -5,6 +5,7 @@ const MobileMenu = () => {
   return (
     <>
       <FontAwesomeIcon icon={faBars} />
+
       <FontAwesomeIcon icon={faXmark} />
     </>
   );
