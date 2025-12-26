@@ -2,15 +2,18 @@ import styled from 'styled-components';
 import { globalColor } from '../../style/theme';
 
 export const Nav = styled.nav`
-  max-width: ${globalColor.maxWidth};
-  width: ${globalColor.minWidth};
+  width: 100%;
+  padding: 15px 0;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 `;
 
 // color: ${({ theme }) => theme.text};
 export const Container = styled.div`
-  width: 100%;
-  padding: 15px 0;
+  max-width: ${globalColor.maxWidth};
+  width: ${globalColor.minWidth};
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
