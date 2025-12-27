@@ -1,95 +1,41 @@
+import { useMobileMenu } from '../../context/mobileMenuContext';
+import * as S from './menuList.styled';
 import { Link } from 'react-scroll';
 
-import * as S from './menuList.styled';
-
 const MenuList = () => {
+  const { isOpen, closeMenu } = useMobileMenu();
+
   return (
-    <S.UL>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          Home
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          About
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="services"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          Services
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="resume"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          Resume
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          Portfolio
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="references"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          References
-        </Link>
-      </S.LI>
-      <S.LI>
-        <Link
-          activeClass="actived"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
-          Contact
-        </Link>
-      </S.LI>
-    </S.UL>
+    <S.GroupList
+      className="groupList"
+      style={{ display: isOpen ? 'flex' : 'none' }}
+    >
+      <S.UL>
+        {[
+          'home',
+          'about',
+          'services',
+          'resume',
+          'portfolio',
+          'references',
+          'contact',
+        ].map((section) => (
+          <S.LI key={section}>
+            <Link
+              activeClass="actived"
+              to={section}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onClick={closeMenu} // Fecha o menu ao clicar no link
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </Link>
+          </S.LI>
+        ))}
+      </S.UL>
+    </S.GroupList>
   );
 };
 
