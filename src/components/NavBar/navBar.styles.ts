@@ -7,6 +7,12 @@ export const Nav = styled.nav`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 992px) {
+    position: relative;
+    align-items: start;
+    }
+    // height: 100vh;
 `;
 
 // color: ${({ theme }) => theme.text};
@@ -18,4 +24,8 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 `;
