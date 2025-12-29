@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useMobileMenu } from '../../context/mobileMenuContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,11 +7,6 @@ import * as S from './mobileMenu.styled';
 
 const MobileMenu = () => {
   const { isOpen, toggleMenu } = useMobileMenu();
-  const [show, setShow] = useState(true);
-
-  // const handleMobileMenu = () => {
-  //   !show ? setShow(true) : setShow(false);
-  // };
 
   return (
     <S.MobileMenu className="mobileMenu" onClick={toggleMenu}>
