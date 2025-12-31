@@ -1,8 +1,10 @@
 import { useTheme } from '../../context/themeContext';
 
-import logoLightVideo from '../../assets/video/animateSantanaWebDeveloper.mp4';
-import logoDarkVideo from '../../assets/video/blackWebDeveloperLogoAnimation.mp4';
-import logoImg from '../../../public/img/logo-512.png';
+import lightLogoVideo from '../../assets/video/logoLight.mp4';
+import darkLogoVideo from '../../assets/video/logoDark.mp4';
+// import logoImg from '../../../public/img/logo-512.png';
+import lightLogoImg from '../../../public/logo/logoLight.jpg';
+import darkLogoImg from '../../../public/logo/logoDark.jpg';
 
 import * as S from './logo.styled';
 import { Link } from 'react-scroll';
@@ -10,7 +12,9 @@ import { Link } from 'react-scroll';
 export const Logo = () => {
   const { themeMode } = useTheme();
 
-  const videoSrc = themeMode === 'dark' ? logoDarkVideo : logoLightVideo;
+  const videoSrc = themeMode === 'dark' ? darkLogoVideo : lightLogoVideo;
+
+  const imgSrc = themeMode === 'dark' ? darkLogoImg : lightLogoImg;
 
   const isVideoSupported = () => {
     const videoElement = document.createElement('video');
@@ -26,7 +30,7 @@ export const Logo = () => {
             Your browser does not support video in HTML5
           </video>
         ) : (
-          <img src={logoImg} alt="Santana's logo" />
+          <img src={imgSrc} alt="Santana's logo" />
         )}
       </S.LogoBox>
     </Link>
