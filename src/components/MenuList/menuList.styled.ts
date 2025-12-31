@@ -35,7 +35,7 @@ export const UL = styled.ul`
     max-width: 300px;
     width: 100%;
     padding-right: 5% !important;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.background};
   }
 `;
 
@@ -50,7 +50,7 @@ export const LI = styled.li`
 
   @media (max-width: 992px) {
     font-size: 18px;
-    background-color: ${({ theme }) => theme.transparent};
+    // background-color: ${({ theme }) => theme.transparent};
     color: ${({ theme }) => theme.text};
     font-size: 18px;
 
