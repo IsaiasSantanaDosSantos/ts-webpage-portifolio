@@ -1,6 +1,7 @@
 import MobileMenu from '../MobileMenu/mobileMenu';
 import MenuList from '../MenuList/menuList';
 import ThemeButton from '../ThemeButton/themeButton';
+import LanguageButtons from '../LanguageButton/linguageButton';
 import { useDeviceInfo } from '../../utils/useDeviceInfo';
 import mobileSize from '../../utils/mobileSize';
 import { Logo } from '../Logo/logo';
@@ -17,7 +18,12 @@ const NavBar = () => {
         <Logo />
         <MenuList />
         <MobileMenu />
-        {!isMobile && <ThemeButton />}
+        {!isMobile && (
+          <>
+            <ThemeButton />
+            <LanguageButtons />
+          </>
+        )}
       </S.Container>
     </S.Nav>
   );
