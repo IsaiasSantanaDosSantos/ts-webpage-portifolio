@@ -1,9 +1,15 @@
-import { useMobileMenu } from '../../context/mobileMenuContext';
-import * as S from './menuList.styled';
 import { Link } from 'react-scroll';
+import { useMobileMenu } from '../../context/mobileMenuContext';
+import { useDeviceInfo } from '../../utils/useDeviceInfo';
+import mobileSize from '../../utils/mobileSize';
+import ThemeButton from '../ThemeButton/themeButton';
+
+import * as S from './menuList.styled';
 
 const MenuList = () => {
   const { isOpen, closeMenu } = useMobileMenu();
+  const { width } = useDeviceInfo(mobileSize);
+  const isMobile = width < mobileSize;
 
   return (
     <S.GroupList
@@ -34,6 +40,7 @@ const MenuList = () => {
             </Link>
           </S.LI>
         ))}
+        {isMobile && <ThemeButton />}
       </S.UL>
     </S.GroupList>
   );

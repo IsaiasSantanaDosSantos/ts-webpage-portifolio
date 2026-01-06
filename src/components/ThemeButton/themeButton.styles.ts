@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.button`
   position: fixed;
-  top: 25px;
   left: auto;
   right: 20px;
   bottom: auto;
@@ -21,5 +20,13 @@ export const Container = styled.button`
   &:focus,
   &:focus-visible {
     outline: none !important;
+  }
+
+  @media (max-width: 992px) {
+    position: absolute;
+    width: 50px;
+    right: 6%;
+    bottom: 50px;
+    margin-top: 20px;
   }
 `;

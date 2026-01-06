@@ -1,18 +1,23 @@
 import MobileMenu from '../MobileMenu/mobileMenu';
 import MenuList from '../MenuList/menuList';
 import ThemeButton from '../ThemeButton/themeButton';
+import { useDeviceInfo } from '../../utils/useDeviceInfo';
+import mobileSize from '../../utils/mobileSize';
 import { Logo } from '../Logo/logo';
 
 import * as S from './navBar.styles';
 
 const NavBar = () => {
+  const { width } = useDeviceInfo(mobileSize);
+  const isMobile = width < mobileSize;
+
   return (
     <S.Nav className="navBar">
       <S.Container className="navBarContainer">
         <Logo />
         <MenuList />
         <MobileMenu />
-        <ThemeButton />
+        {!isMobile && <ThemeButton />}
       </S.Container>
     </S.Nav>
   );

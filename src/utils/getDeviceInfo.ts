@@ -15,7 +15,7 @@ export default function getDeviceInfo() {
     navigator.userAgent
   );
 
-  const type = isMobile || width < 768 ? 'mobile' : 'desktop';
+  const type = isMobile || width < 992 ? 'mobile' : 'desktop';
 
   return {
     type, // "mobile" ou "desktop"
