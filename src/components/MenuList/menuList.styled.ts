@@ -5,8 +5,8 @@ export const GroupList = styled.div`
   @media (max-width: 992px) {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 90px);
-    top: 90px;
+    height: calc(100vh - 60px);
+    top: 60px;
     bottom: 0;
     right: 0;
     // display: flex;
@@ -27,6 +27,7 @@ export const UL = styled.ul`
 
   @media (max-width: 992px) {
     // display: none;
+    position: relative;
     flex-direction: column;
     justify-content: start;
     align-items: end;
@@ -35,7 +36,7 @@ export const UL = styled.ul`
     max-width: 300px;
     width: 100%;
     padding-right: 5% !important;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.background};
   }
 `;
 
@@ -50,7 +51,7 @@ export const LI = styled.li`
 
   @media (max-width: 992px) {
     font-size: 18px;
-    background-color: ${({ theme }) => theme.transparent};
+    // background-color: ${({ theme }) => theme.transparent};
     color: ${({ theme }) => theme.text};
     font-size: 18px;
 
