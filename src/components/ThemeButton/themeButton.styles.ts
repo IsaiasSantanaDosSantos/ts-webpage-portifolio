@@ -23,8 +23,10 @@ export const Container = styled.button`
   }
 
   @media (max-width: 992px) {
-    position: relative;
-    right: 0;
+    position: absolute;
+    width: 50px;
+    right: 6%;
+    bottom: 50px;
     margin-top: 20px;
   }
 `;

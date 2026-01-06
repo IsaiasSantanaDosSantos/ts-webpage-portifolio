@@ -5,8 +5,8 @@ export const GroupList = styled.div`
   @media (max-width: 992px) {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 90px);
-    top: 90px;
+    height: calc(100vh - 60px);
+    top: 60px;
     bottom: 0;
     right: 0;
     // display: flex;
@@ -27,6 +27,7 @@ export const UL = styled.ul`
 
   @media (max-width: 992px) {
     // display: none;
+    position: relative;
     flex-direction: column;
     justify-content: start;
     align-items: end;
