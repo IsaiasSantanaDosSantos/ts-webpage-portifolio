@@ -5,6 +5,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import { ThemeProviderContext, useTheme } from './context/themeContext';
 import { MobileMenuProvider } from './context/mobileMenuContext';
 
+// impor../i18n18n';
+
 import NavBar from './components/NavBar/navBar';
 import GlobalStyles from './style/GlobalStyles';
 
