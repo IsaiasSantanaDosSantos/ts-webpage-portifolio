@@ -13,5 +13,8 @@ export default defineConfig({
     //     { path: '/assets', serve: true },
     //   ],
     // },
+    host: "0.0.0.0",
+    port: 5173,
+    https: false, 
   },
 });
