@@ -28,14 +28,14 @@ import { useTheme } from "../../context/themeContext";
     modes: { grab: { distance: 180, links: { opacity: 0.8 } } }
   },
   particles: {
-    number: { value: 85, density: { enable: true, area: 600 } },
+    number: { value: 100, density: { enable: true, area: 900 } },
     opacity: { value: 0.7 },
     size: { value: 2 },
     color: { value: themeObject.text },
     links: { 
       enable: true,
       color: { value: themeObject.text },
-      distance: 150,
+      distance: 180,
       opacity: 0.6,
       width: 1
     },
