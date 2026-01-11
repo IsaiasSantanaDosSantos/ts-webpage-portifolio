@@ -29,4 +29,13 @@ const NavBar = () => {
   );
 };
 
+/*
+
+Proximo passo: Criar a header ou o footer e não esquecer de criar uma nova branch!
+
+
+
+
+
+*/
 export default NavBar;

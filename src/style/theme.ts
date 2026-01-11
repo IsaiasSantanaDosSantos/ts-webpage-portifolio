@@ -5,6 +5,7 @@ export const lightTheme = {
   text: '#000000',
   borderBottom: '#000000',
   transparent: '#ffffffd6',
+  graphic: '#00aaff',
 };
 
 export const darkTheme = {
@@ -14,6 +15,7 @@ export const darkTheme = {
   text: '#ffffff',
   borderBottom: '#ffffff',
   transparent: '#000000cf',
+  graphic: '#F5DF4E',
 };
 
 export const globalColor = {
@@ -28,21 +30,7 @@ export const globalColor = {
   minWidth: '90%',
 };
 
-// SideBar / TopBar
 export const menuTheme = {
-  // colors: {
-  //   bg: '#0B0F14', // fundo app
-  //   panel: '#121822', // painéis / sidebar
-  //   panelAlt: '#0E141D',
-  //   text: '#E7EDF5',
-  //   textDim: '#A7B4C2',
-  //   primary: '#4F8BFF',
-  //   primaryHover: '#6AA2FF',
-  //   border: '#1E2936',
-  //   success: '#22C55E',
-  //   warning: '#F59E0B',
-  //   danger: '#EF4444',
-  // },
   layout: {
     sidebarWidth: 260,
     sidebarWidthCollapsed: 72,
