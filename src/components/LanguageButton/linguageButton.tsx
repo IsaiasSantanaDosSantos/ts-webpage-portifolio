@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
-import * as S from './linguageButton.style';
+import * as S from './linguageButton.styles';
 
 const LanguageButtons = () => {
   const { i18n } = useTranslation();

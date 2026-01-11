@@ -5,8 +5,9 @@ import { useDeviceInfo } from '../../utils/useDeviceInfo';
 import mobileSize from '../../utils/mobileSize';
 import ThemeButton from '../ThemeButton/themeButton';
 import LanguageButtons from '../LanguageButton/linguageButton';
+import { menuItems } from '../../types';
 
-import * as S from './menuList.styled';
+import * as S from './menuList.styles';
 
 const MenuList = () => {
   const { isOpen, closeMenu } = useMobileMenu();
@@ -14,15 +15,7 @@ const MenuList = () => {
   const isMobile = width < mobileSize;
   const { t } = useTranslation();
 
-  const menuItems = [
-    { key: 'navbarFirstLink', section: 'home' },
-    { key: 'navbarSecundLink', section: 'about' },
-    { key: 'navbarThirdLink', section: 'services' },
-    { key: 'navbarFourthLink', section: 'resume' },
-    { key: 'navbarFivethLink', section: 'portfolio' },
-    { key: 'navbarSixthLink', section: 'references' },
-    { key: 'navbarSeventhLink', section: 'contact' },
-  ];
+
 
   return (
     <S.GroupList
