@@ -3,7 +3,7 @@ import { useMobileMenu } from '../../context/mobileMenuContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import * as S from './mobileMenu.styled';
+import * as S from './mobileMenu.styles';
 
 const MobileMenu = () => {
   const { isOpen, toggleMenu } = useMobileMenu();

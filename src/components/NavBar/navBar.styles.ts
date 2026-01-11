@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  z-index: 99;
 
   @media (max-width: 992px) {
     position: relative;

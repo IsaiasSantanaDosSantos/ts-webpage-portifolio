@@ -6,7 +6,7 @@ import darkLogoVideo from '../../assets/video/logoDark.mp4';
 import lightLogoImg from '../../../public/logo/logoLight.jpg';
 import darkLogoImg from '../../../public/logo/logoDark.jpg';
 
-import * as S from './logo.styled';
+import * as S from './logo.styles';
 import { Link } from 'react-scroll';
 
 export const Logo = () => {
