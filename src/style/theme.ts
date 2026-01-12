@@ -4,7 +4,7 @@ export const lightTheme = {
   color: '#000',
   text: '#000000',
   borderBottom: '#000000',
-  transparent: '#ffffffd6',
+  transparent: '#ffffff00',
   graphic: '#F5DF4E',
 };
 
@@ -28,6 +28,7 @@ export const globalColor = {
   width: '97%',
   maxWidth: '1200px',
   minWidth: '90%',
+  blur: 'blur(3px)',
 };
 
 export const menuTheme = {
