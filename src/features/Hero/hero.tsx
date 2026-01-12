@@ -1,5 +1,5 @@
 // import { useTranslation } from "react-i18next";
-import HeroBackground from "./heroBackground";
+// import HeroBackground from "./heroBackground";
 import HeroTypingText from "./heroTypingText";
 import * as S from "./hero.styles";
 
@@ -10,7 +10,7 @@ import * as S from "./hero.styles";
 
   return (
     <S.HeroContainer id="home">
-      <HeroBackground />
+      {/* <HeroBackground /> */}
       <S.HeroContent>
        <S.HeroSubtitleSmall>
           OLÁ, SOU DESENVOLVEDOR FREELANCER

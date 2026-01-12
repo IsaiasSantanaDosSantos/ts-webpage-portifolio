@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.button`
   position: fixed;
+  top: 30px;
   left: auto;
-  right: 20px;
-  bottom: auto;
+  bottom: 35px;
+  right: 35px;
   z-index: 999999;
   background: none;
   border: none;
@@ -17,16 +18,14 @@ export const Container = styled.button`
   padding: 0;
   outline: none;
   user-select: none;
+ 
+
   &:focus,
   &:focus-visible {
     outline: none !important;
   }
 
   @media (max-width: 992px) {
-    position: absolute;
-    width: 50px;
-    right: 6%;
-    bottom: 50px;
-    margin-top: 20px;
+     top: auto;
   }
 `;
