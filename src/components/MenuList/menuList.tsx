@@ -4,7 +4,6 @@ import { useMobileMenu } from '../../context/mobileMenuContext';
 import { useDeviceInfo } from '../../utils/useDeviceInfo';
 import mobileSize from '../../utils/mobileSize';
 import ThemeButton from '../ThemeButton/themeButton';
-import LanguageButtons from '../LanguageButton/linguageButton';
 import { menuItems } from '../../types';
 
 import * as S from './menuList.styles';
@@ -38,12 +37,7 @@ const MenuList = () => {
             </Link>
           </S.LI>
         ))}
-        {isMobile && (
-          <>
-            <ThemeButton />
-            <LanguageButtons />
-          </>
-        )}
+        {isMobile && <ThemeButton /> }
       </S.UL>
     </S.GroupList>
   );

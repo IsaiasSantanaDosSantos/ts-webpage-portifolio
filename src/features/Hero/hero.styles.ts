@@ -1,10 +1,13 @@
-// src/features/Hero/hero.style.ts
 import styled from "styled-components";
 
 export const HeroContainer = styled.section`
+* {
+  margin: 0;
+  padding: 0;
+}
   position: relative; /* necessário para o background ficar dentro */
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
