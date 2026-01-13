@@ -26,9 +26,9 @@ const AppContent = () => {
 
   return (
     <ThemeProvider theme={themeObject}>
-      <PageBackground />
       <GlobalStyles />
       <ToastContainer theme="colored" />
+      <PageBackground />
       <MobileMenuProvider>
         <Routes>
           <Route path="/" element={<PublicPage />} />
