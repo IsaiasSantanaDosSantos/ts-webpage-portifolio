@@ -1,6 +1,7 @@
 import { useTheme } from '../../context/themeContext';
 
 import lightLogoVideo from '../../assets/video/logoLight.mp4';
+// import darkLogoVideo from '../../assets/video/logoDark.mp4';
 import darkLogoVideo from '../../assets/video/logoDark.mp4';
 // import logoImg from '../../../public/img/logo-512.png';
 import lightLogoImg from '../../../public/logo/logoLight.jpg';

@@ -14,7 +14,7 @@ export const darkTheme = {
   color: '#fff',
   text: '#ffffff',
   borderBottom: '#ffffff',
-  transparent: '#000000cf',
+  transparent: '#12141600',
   graphic: '#F5DF4E',
 };
 
@@ -28,7 +28,7 @@ export const globalColor = {
   width: '97%',
   maxWidth: '1200px',
   minWidth: '90%',
-  blur: 'blur(3px)',
+  blur: 'blur(2px)',
 };
 
 export const menuTheme = {

@@ -4,7 +4,7 @@ export const Container = styled.button`
   position: fixed;
   top: 30px;
   left: auto;
-  bottom: 35px;
+  bottom: 50px;
   right: 35px;
   z-index: 999999;
   background: none;

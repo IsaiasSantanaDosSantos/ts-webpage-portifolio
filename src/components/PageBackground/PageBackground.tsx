@@ -20,7 +20,8 @@ import { useTheme } from "../../context/themeContext";
    
     options={{
   background: { color: "transparent" },
-  fullScreen: { enable: false },
+  // fullScreen: { enable: false },
+  fullScreen: { enable: true },
   fpsLimit: 60,
   interactivity: {
     events: { onHover: { enable: true, mode: "grab" } },
@@ -46,7 +47,7 @@ import { useTheme } from "../../context/themeContext";
         position: "absolute",
         inset: 0,
         zIndex: 0
-      }}
+}}
     />
   );
 };
