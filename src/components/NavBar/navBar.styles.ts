@@ -6,6 +6,7 @@ interface NavProps {
 }
 
 export const Nav = styled.nav<NavProps>`
+position: fixed;
 width: 100%;
 padding: 5px 0;
 margin: 0 auto;
@@ -17,7 +18,6 @@ backdrop-filter: ${globalColor.blur};
 
 
   @media (max-width: 992px) {
-    position: ${({ $isOpen }) => ($isOpen ? 'fixed' : 'relative')};
     height: ${({ $isOpen }) => ($isOpen ? '100vh' : 'auto')};
     top: 0;
     left: 0;

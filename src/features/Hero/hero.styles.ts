@@ -49,7 +49,6 @@ export const TypingText = styled.h1`
   font-weight: 700;
   // color: ${({ theme }) => theme.text};
   ${({ theme }) => neonText(theme.text)}
-  text-shadow: 0 0 8px ${({ theme }) => theme.text};
   white-space: nowrap;
   font-size: 100px;
   line-height: 85px;
@@ -75,7 +74,7 @@ export const Cursor = styled.span`
   margin-left: 4px;
   font-size: 100px;
   color: ${({ theme }) => theme.text};
-  text-shadow: 0 0 8px ${({ theme }) => theme.text};
+  ${({ theme }) => neonText(theme.text)}
 
   animation: blink 1s infinite;
 
@@ -134,8 +133,8 @@ export const HeroSubtitleSmall = styled.p`
 export const neonText = (color: string) => `
   color: ${color};
   text-shadow:
-    0 0 4px ${color}55,
-    0 0 10px ${color}33,
-    0 0 18px ${color}22;
+    0 0 7px ${color}55,
+    0 0 7px ${color}33,
+    0 0 7px ${color}22;
 `;
 

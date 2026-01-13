@@ -33,7 +33,7 @@ export const ContainerLinguageBtn = styled.div`
 
   @media (max-width: 992px) {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     right: 10%;
   }
 `;
