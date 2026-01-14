@@ -1,6 +1,7 @@
 export const lightTheme = {
   background: '#fff',
   iceColorBg: '#F1F3F5',
+  transparentGlass: 'rgba(255, 255, 255, 0.08)',
   color: '#000',
   text: '#000000',
   borderBottom: '#000000',
@@ -11,6 +12,7 @@ export const lightTheme = {
 export const darkTheme = {
   background: '#121212',
   iceColorBg: '#1C1C1C',
+  transparentGlassDark: 'rgba(18, 18, 18, 0.35)',
   color: '#fff',
   text: '#ffffff',
   borderBottom: '#ffffff',
@@ -29,6 +31,7 @@ export const globalColor = {
   maxWidth: '1200px',
   minWidth: '90%',
   blur: 'blur(2px)',
+  radius: '15px',
 };
 
 export const menuTheme = {

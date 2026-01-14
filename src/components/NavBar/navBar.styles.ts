@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { glassEffect } from "../../style/mixins/glass";
 import { globalColor } from '../../style/theme';
 
 interface NavProps {
@@ -12,9 +13,19 @@ padding: 5px 0;
 margin: 0 auto;
 display: flex;
 justify-content: center;
-background-color: ${({ theme }) => theme.transparent};
+border-top: none !important;
+border-left: none !important;
+border-right: none !important;
+${glassEffect({
+  position: "fixed",
+  blur: 10,
+  radius: "none",
+  border: "none",
+  withWillChange: true,
+})}
+
+
 z-index: 99;    
-backdrop-filter: ${globalColor.blur};
 
 
   @media (max-width: 992px) {
