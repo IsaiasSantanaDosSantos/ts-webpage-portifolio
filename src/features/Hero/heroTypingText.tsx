@@ -1,14 +1,8 @@
 
 import { useEffect, useState } from "react";
-import * as S from "./hero.styles";
+import { useTranslation } from "react-i18next";
 
-const TEXTS = [
-  "Santana",
-  "Desenvolvedor",
-  "Web",
-  "&",
-  "Mobile",
-];
+import * as S from "./hero.styles";
 
 const TYPING_SPEED = 150;
 const ERASING_SPEED = 100;
@@ -18,6 +12,12 @@ const HeroTypingText = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+
+    const { t } = useTranslation();
+
+    const TEXTS = t("heroTypingTexts", {
+    returnObjects: true,
+  }) as string[];
 
   useEffect(() => {
     const currentText: any = TEXTS[textIndex];
@@ -49,6 +49,12 @@ const HeroTypingText = () => {
 
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, textIndex]);
+
+  useEffect(() => {
+  setTextIndex(0);
+  setDisplayText("");
+  setIsDeleting(true);
+}, []);
 
   return (
     <S.TypingWrapper>

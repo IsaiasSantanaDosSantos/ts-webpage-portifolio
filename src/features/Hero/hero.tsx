@@ -1,25 +1,24 @@
-// import { useTranslation } from "react-i18next";
-// import HeroBackground from "./heroBackground";
+import { useTranslation } from "react-i18next";
 import HeroTypingText from "./heroTypingText";
 import * as S from "./hero.styles";
 
 
 
   const Hero = () => {
-//   const { t } = useTranslation("hero");
+  const { t } = useTranslation();
 
   return (
     <S.HeroContainer id="home">
       {/* <HeroBackground /> */}
       <S.HeroContent>
        <S.HeroSubtitleSmall>
-          OLÁ, SOU DESENVOLVEDOR FREELANCER
+          {t("heroTitle")}
         </S.HeroSubtitleSmall>
 
         <HeroTypingText />
 
         <S.HeroSubtitleSmall>
-          Atuando a partir de São José dos Campos, SP — Brasil
+          {t("heroSubtitle")}
         </S.HeroSubtitleSmall>
       </S.HeroContent>
     </S.HeroContainer>
