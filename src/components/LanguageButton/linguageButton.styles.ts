@@ -19,6 +19,10 @@ export const ContainerLinguageBtn = styled.div`
     background-color: transparent;
     cursor: pointer;
     transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
     .flag-icon {
       font-size: 35px;
@@ -32,12 +36,10 @@ export const ContainerLinguageBtn = styled.div`
   }
 
   @media (max-width: 992px) {
-    position: absolute;
+    position: fixed;
     bottom: 50px;
-    right: 10%;
+    right: 35px;
   }
 `;
 
-// export const GlobalStyle = createGlobalStyle`
-//   @import '~flag-icon-css/css/flag-icon.css';
-// `;
+

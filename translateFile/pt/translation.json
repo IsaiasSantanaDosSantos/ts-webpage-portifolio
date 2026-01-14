@@ -6,5 +6,15 @@
   "navbarFourthLink": "CURRÍCULO",
   "navbarFivethLink": "PORTFÓLIO",
   "navbarSixthLink": "REFERÊNCIAS",
-  "navbarSeventhLink": "CONTATO"
+  "navbarSeventhLink": "CONTATO",
+
+  "heroTitle": "OLÁ, SOU DESENVOLVEDOR FREELANCE",
+  "heroSubtitle": "Atuando a partir de São José dos Campos, SP — Brasil",
+  "heroTypingTexts": [
+    "Santana",
+    "Desenvolvedor",
+    "Web",
+    "&",
+    "Mobile."
+  ]
 }
