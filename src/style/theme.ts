@@ -32,6 +32,7 @@ export const globalColor = {
   minWidth: '90%',
   blur: 'blur(2px)',
   radius: '15px',
+  subTitlePadding: "5px 15px"
 };
 
 export const menuTheme = {
